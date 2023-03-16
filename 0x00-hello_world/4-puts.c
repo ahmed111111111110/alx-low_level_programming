@@ -1,12 +1,10 @@
 #include <stdio.h>
 /**
- * my task
+ * Description: main - Prints out a string to stdout.
+ * Return: 0 if success.
  */
-void solve(){
-    puts("\"Programming is like building a multilingual puzzle");
-}
 int main(void)
 {
-   solve();
-    return (0);
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
 }
