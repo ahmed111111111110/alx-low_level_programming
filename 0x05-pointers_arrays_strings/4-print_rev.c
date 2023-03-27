@@ -9,10 +9,14 @@
 */
 void print_rev(char *s)
 {
-int len = strlen(s);
-for (int i = len - 1; i >= 0; i--)
+int c = 0;
+while (s[c] != '\0')
 {
-printf("%c", s[i]);
+c++;
 }
-printf("\n");
+for (c -= 1; c >= 0; c--)
+{
+putchar(s[c]);
+}
+putchar('\n');
 }
