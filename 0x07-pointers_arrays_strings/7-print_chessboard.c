@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_chessboard .
+ * print_chessboard  000000.
  * @a: matrix 2d
 */
 
