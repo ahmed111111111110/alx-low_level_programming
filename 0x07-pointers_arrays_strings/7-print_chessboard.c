@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_chessboard - prints chessboard.
- * @a: matrix
+ * print_chessboard .
+ * @a: matrix 2d
 */
 
 void print_chessboard(char (*a)[8])
