@@ -5,7 +5,7 @@
  *
 * Return: factorial number
 */
-int factorial(long long n)
+long long factorial(long long n)
 {
 if (n == 1)
 {
