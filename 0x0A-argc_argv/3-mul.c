@@ -22,9 +22,9 @@ else
 j = 1;
 for (i = 1; i < 3; i++)
 {
-j *= atoi(argv[1]);
-printf("%d\n", j);
+j *= atoi(argv[i]);
 }
+printf("%d\n", j);
 }
 return (0);
 }
