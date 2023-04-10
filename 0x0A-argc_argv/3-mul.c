@@ -11,16 +11,20 @@
 
 int main(int argc, char *argv[])
 {
-int x = 3;
-if (argc < x || argc > x)
+int i, j;
+if (argc == 1 || argc == 2)
 {
 printf("Error\n");
 return (1);
 }
-int i = atoi(argv[1]);
-int k = atoi(argv[2]);
-int result = i * k;
-printf("%d\n", result);
-
+else
+{
+j = 1;
+for (i = 1; i < 3; i++)
+{
+j *= atoi(argv[1]);
+printf("%d\n", j);
+}
+}
 return (0);
 }
