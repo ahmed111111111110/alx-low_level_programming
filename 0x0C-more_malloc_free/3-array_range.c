@@ -8,7 +8,8 @@
 *
 * Return: pointer to the new array
 */
-int *array_range(int min, int max) {
+int *array_range(int min, int max)
+{
 int *ptr;
 int i, n;
 if (min > max)
