@@ -2,13 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* *array_range - creates an array from min to max
-* @min: minimum range
-* @max: maximum range
-*
-* Return: pointer to the new array
-*/
-/**
 * *_realloc - reallocates a memory block using malloc and free
 * @ptr: pointer to the memory previsouly allocated by malloc
 * @old_size: size of the allocated memory for ptr
