@@ -17,7 +17,7 @@ while (str[len])
 {
 len++;
 }
-if (new_n == NULL)
+if (!new_n)
 {
 return (NULL);
 }
