@@ -26,5 +26,5 @@ new_n->len = len;
 new_n->next = *head;
 *head = new_n;
 
-return (new_n);
+return (*head);
 }
