@@ -21,8 +21,8 @@ else
 {
 printf("[%u]%s\n", h->len, h->str);
 }
-count++;
 h = h->next;
+count++;
 }
 
 return (count);
