@@ -16,7 +16,8 @@ if (h->str)
 {
 printf("[%u]%s\n", h->len, h->str);
 }
-else {
+else
+{
 printf("[0] (nil)\n");
 }
 count++;
