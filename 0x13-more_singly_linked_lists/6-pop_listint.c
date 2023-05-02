@@ -4,12 +4,14 @@
 /**
 * pop_listint - delete the head node of list
 * @head: pointer to linked list need to free
- * 
- * Return : The data inside the element in list was deleted 
+ *
+ * Return: the data inside the deleted element or 0 if empty,
 */
-int pop_listint(listint_t **head) {
-if (*head == NULL) {
-return 0;
+int pop_listint(listint_t **head)
+{
+if (*head == NULL)
+{
+return (0);
 }
 
 listint_t *old_head = *head;
@@ -17,5 +19,5 @@ int n = old_head->n;
 *head = old_head->next;
 free(old_head);
 
-return n;
+return (n);
 }
