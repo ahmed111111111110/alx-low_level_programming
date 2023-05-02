@@ -2,22 +2,23 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
-* get_nodeint_at_index - return the node at a certain index
+* pop_listint - delete the head node of list
 * @head: pointer to linked list need to free
-* @index: index of the node to be return
-* * Return: pointer to the node we're looking for, or NULL if it fails
+ *
+ * Return: the data inside the deleted element or 0 if empty,
 */
-listint_t *get_nodeint_at_index(listint_t *head, unsigned int index) {
-if (head == NULL) {
-return (NULL);
+int pop_listint(listint_t **head)
+{
+listint_t *old_head = *head;
+int n = old_head->n;
+if (*head == NULL)
+{
+return (0);
 }
 
-listint_t *current = head;
-unsigned int count = 0;
-while (current != NULL && count < index) {
-current = current->next;
-count++;
-}
 
-return (current);
+*head = old_head->next;
+free(old_head);
+
+return (n);
 }
