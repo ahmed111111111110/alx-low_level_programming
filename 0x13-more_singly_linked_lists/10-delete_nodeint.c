@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
-* insert_nodeint_at_index - delete node from list
+* delete_nodeint_at_index - delete node from list
 * @head: pointer to linked list need to free
 * index : index where it will be deleted
 *
