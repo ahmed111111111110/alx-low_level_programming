@@ -9,7 +9,7 @@
 void print_binary(unsigned long int n) {
 int j,cnt = 0;
 unsigned long int res;
-for (j = 62; j >= 0; j--){
+for (j = 63; j >= 0; j--){
 res = n >> j;
 if (res & 1){
 _putchar('1');
