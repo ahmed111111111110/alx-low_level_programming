@@ -18,36 +18,15 @@
 * or zero or null if fails
 */
 
-ssize_t read_textfile(const char *filename, size_t letters)
+size_t read_textfile(const char *filename, size_t letters)
 {
-if (filename == NULL)
-{
+char *bud = malloc(sizeof(char) * letters);
+ssize_t fgg = open(filename, O_RDONLY);
+if (fgg == -1)
 return (0);
+ssize_t too = read(fgg, bud, letters);
+ssize_t wr = write(STDOUT_FILENO, bud, too);
+free(bud);
+close(fgg);
+return (wr);
 }
-
-FILE *file = fopen(filename, "r");
-if (file == NULL)
-{
-return (0);
-}
-char buffer[letters];
-size_t bytes_read = fread(buffer, 1, letters, file);
-if (bytes_read == 0)
-{
-fclose(file);
-return (0);
-}
-
-size_t bytes_written = fwrite(buffer, 1, bytes_read, stdout);
-
-if (bytes_written != bytes_read)
-{
-fclose(file);
-return (0);
-}
-
-fclose(file);
-
-return (bytes_read);
-}
-
